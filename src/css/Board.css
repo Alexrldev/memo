@@ -1,0 +1,52 @@
+.board
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 600px;
+    height: 480px;
+    align-content: center;
+    gap: 10px;
+    margin: 14px;
+    border: 5px solid rgb(203, 199, 199);
+    padding: 4px 0;
+    border-radius: 20px;
+}
+
+@media (max-width:640px) 
+{
+    .board
+    {
+        width: 400px;    
+        height: 500px;
+    }
+}
+
+@media (max-width:520px) 
+{
+    .board
+    {
+        width: 320px;    
+        height: 400px;
+    }
+}
+
+@media (max-width:428px) 
+{
+    .board
+    {
+        width: 270px;    
+        height: 330px;
+    }
+}
+
+@media (max-width:360px) 
+{
+    .board
+    {
+        width: 220px;    
+        height: 275px;
+    }
+}
+

@@ -1,0 +1,133 @@
+.content_ficha
+{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    padding: 3px;
+    border-radius: 20px;
+}
+
+.ficha_prin
+{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+}
+
+.frente, .reverso
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    backface-visibility: hidden;
+}
+
+.frente
+{
+    background: linear-gradient(41deg, #4233F3 0%, #97ABFF 100%);
+}
+
+.reverso
+{
+    transform: rotateY(180deg);
+}
+
+.reverso img
+{
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+}
+
+.reverso div
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.reverso div .nombre 
+{
+    background-color: rgba(0, 0, 0, 0.255);
+    color: white;
+    padding: 3px;
+    border-radius: 10px;
+}
+
+/*.content_ficha:hover .ficha_prin
+{
+    transform: rotateY(180deg);
+}*/
+.girar
+{
+    transform: rotateY(180deg);
+}
+
+@media (max-width:640px) 
+{
+    .content_ficha
+    {
+        width: 80px;    
+        height: 80px;
+    }
+    .reverso img
+    {
+        width: 80px;
+        height: 80px;
+    }
+    .nombre
+    {
+        font-size: 10px;
+    }
+}
+
+@media (max-width:520px) 
+{
+    .content_ficha
+    {
+        width: 60px;    
+        height: 60px;
+    }
+    .reverso img
+    {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+@media (max-width:428px) 
+{
+    .content_ficha
+    {
+        width: 50px;    
+        height: 50px;
+    }
+    .reverso img
+    {
+        width: 50px;
+        height: 50px;
+    }
+}
+
+@media (max-width:360px) 
+{
+    .content_ficha
+    {
+        width: 40px;
+        height: 40px;
+    }
+
+    .reverso img
+    {
+        width: 40px;
+        height: 40px;
+    }
+}
+

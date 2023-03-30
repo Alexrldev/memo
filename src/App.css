@@ -1,0 +1,29 @@
+.content
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+button
+{
+  background-color: blue;
+  color: white;
+  font-size: 25px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: none;
+  padding: 10px;
+}
+
+button:hover
+{
+  background-color: rgb(114, 114, 253);
+}
+
+button:active
+{
+  border: 2px solid white;
+  background-color: rgb(46, 21, 230);;
+}
